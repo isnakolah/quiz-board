@@ -70,7 +70,16 @@ body {
   background-position: left top;
   background-attachment: fixed;
 }
-#question-1 {
+#question-1,
+#question-2,
+#question-3,
+#question-4,
+#question-5,
+#question-6,
+#question-7,
+#question-8,
+#question-9,
+#question-10 {
   display: none;
 }
 .question-footer {
@@ -141,7 +150,4 @@ button:focus {
 input {
   outline: none;
   border: none;
-}
-#question-2 {
-  display: none;
 }
