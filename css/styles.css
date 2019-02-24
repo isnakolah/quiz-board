@@ -98,3 +98,21 @@ body {
   padding-top: 10px;
   color: teal;
 }
+.answers {
+  width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  color: rgb(155, 98, 78);
+}
+.answers li {
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.answers:hover {
+  color: darkcyan;
+}
+#question-two {
+  display: none;
+}
