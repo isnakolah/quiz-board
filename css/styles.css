@@ -1,3 +1,6 @@
+body {
+  background-image: url("img/")
+}
 .jumbotron {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 29px;
@@ -50,4 +53,17 @@ ol {
 }
 li {
   font-family: monospace;
+}
+.questions {
+  display: none;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  margin-top: 10rem;
 }

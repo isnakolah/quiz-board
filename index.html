@@ -10,7 +10,7 @@
     <title>Quiz Board</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container"><hr><br>
         <div class="card bg-secondary text-light">
             <div class="row">
                 <div class="col-md-7">
@@ -25,23 +25,23 @@
                         </div>
                         <div class="card-body bg-light list-group list-group-flush">
                             <ol>
-                                <li class="list-group-item">Do not cheat.</li>
+                                <li class="list-group-item">Do not refer elsewhere.</li>
                                 <li class="list-group-item bg-light">Do not leave a question blank.</li>
-                                <li class="list-group-item">You have 10 minutes to answer all questions afterwhich you will be graded.</li>
+                                <li class="list-group-item">You have 10 minutes to answer 10 questions afterwhich you will be graded.</li>
                                 <li class="list-group-item bg-light">Most  importantly, have fun! ;)</li>
                                 <li class="list-group-item">You can now begin</li>
                             </ol>
                         </div>
                         <div class="card-footer bg-info text-light">
-                            <button class="start">Begin Test</button>
+                            <button class="start"> <a href="#">Begin Test</a></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><br>
+        </div><br><hr>
         <!--This section only appears after you have clicked the begin button-->
-        <div class="questions">
-            <hr>
+        <div id="questions">
+            
 
         </div>
     </div>
@@ -51,6 +51,6 @@
     <!--Loading the CDN first-->
     <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <!--If CDN doesn't load use the local version-->
-    <script>window.jQuery || document.write('<script>js/jquery<\/script>')</script>
+    <script>window.jQuery || document.write('<script src= "js/jquery"><\/script>')</script>
 </footer>
 </html>
