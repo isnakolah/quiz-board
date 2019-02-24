@@ -6,6 +6,7 @@ body {
   font-size: 29px;
   margin: 0%;
   height: 100%;
+  padding: auto;
 }
 .quiz:hover {
   text-decoration: underline;
@@ -140,4 +141,7 @@ button:focus {
 input {
   outline: none;
   border: none;
+}
+#question-2 {
+  display: none;
 }
