@@ -1,0 +1,27 @@
+.jumbotron {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 29px;
+  margin: 0%;
+}
+.quiz:hover {
+  text-decoration: underline;
+  color: aqua;
+  cursor: pointer;
+}
+.quiz {
+  color: burlywood;
+}
+.start {
+  transition-duration: 0.5s;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 25%;
+
+}
+.start:hover {
+  background-color: rgb(70, 68, 64);
+  color: white;
+}
