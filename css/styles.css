@@ -77,6 +77,7 @@ body {
   padding-top: 12px;
   text-align: right;
   padding-right: 3rem;
+  height: auto;
 }
 .questions {
   height: 44px;
@@ -115,4 +116,15 @@ body {
 }
 #question-two {
   display: none;
+}
+.question-alert {
+  text-align: left;
+  color: rgb(107, 81, 48);
+  font-family: monospace;
+  font-size: 12px;
+  float: left;
+  padding-top: 1.8rem;
+}
+.question-alert:hover {
+  cursor: none;
 }
