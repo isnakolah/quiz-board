@@ -1,5 +1,4 @@
 $('document').ready(function(){
-  var questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen; 
   $('#1a').click(function(){
     $('#question-two').show(215);
     $('#1aa').addClass('clicked')

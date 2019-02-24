@@ -4,7 +4,6 @@ $(document).ready(function(){
     $('#intro').hide(10);
   });
   //Initializing the marking protocol.
-  let totalMarks;
     $('#next1').click(function(){
       $('#question-2').show(350);
       $('#question-1').hide(10);
