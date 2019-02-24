@@ -41,4 +41,8 @@ $(document).ready(function(){
       $('#question-2').show(500);
       $('#question-1').hide(10);
     })
+    $('#next2').click(function(){
+      $('#question-3').show(500);
+      $('#question-2').hide(10);
+    })
 });
