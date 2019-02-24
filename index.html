@@ -33,7 +33,7 @@
                             </ol>
                         </div>
                         <div class="card-footer bg-info text-light">
-                            <input type="button" value="Begin Test" class="start">
+                            <input type="button" value="Begin Test" class="start" id="begin">
                             <!--<button class="start"> <a href="#">Begin Test</a></button>-->
                         </div>
                     </div>
@@ -43,15 +43,25 @@
         <!--This section only appears after you have clicked the begin button-->
     </div> 
     <div id="question-1" class="container"><hr><br>
-        <div class="row">
-            <div class="col-md-5 bg-info jumbotron">
-                <h2 class="text-light">What rings in your mind when you hear <span title="Oops! There is no leakage." class="quiz"><strong>JavaScript?</strong></span></h2>
+        <div card>
+            <div class="card-header jumbotron text-dark header-questions">
+                <h1>Question One</h1>
             </div>
-            <div class="col-md-7 bg-light">
-
+            <div class="card-body question-body">
+                <div class="row question-body">
+                    <div class="col-md-5 bg-info jumbotron">
+                        <h2 class="text-light">What rings in your mind when you hear <span title="Oops! There is no leakage." class="quiz"><strong>JavaScript?</strong></span></h2>
+                    </div>
+                    <div class="col-md-7 bg-light">
+                        
+                    </div>
+                </div>
+                <div class="card-footer jumbotron text-light question-footer">
+                    <input type="button" value="Next Question" class="start questions" id="question-two">
+                </div>
             </div>
         </div><br><hr>
-    </div>  
+    </div>
 </body>
 <footer>
     <script src="js/jquery-3.3.1.js"></script>

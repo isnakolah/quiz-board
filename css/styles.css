@@ -37,6 +37,7 @@ body {
 }
 .card-footer {
   text-align: center;
+  width: 100%;
 }
 .list-group-flush {
   margin: 0;
@@ -49,14 +50,8 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-.col-md-5 {
-  height: 100%;
-}
 li {
   font-family: monospace;
-}
-.questions {
-  display: none;
 }
 a {
   color: black;
@@ -76,4 +71,28 @@ body {
 }
 #question-1 {
   display: none;
+}
+.question-footer {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: right;
+  padding-right: 3rem;
+}
+.questions {
+  height: 44px;
+  width: 120px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: chocolate;
+}
+.questions:hover {
+  color: whitesmoke;
+  background-color: brown;
+}
+.question-body{
+  padding: 0;
+  margin: 0;
+}
+.header-questions {
+  
 }
