@@ -10,13 +10,16 @@ $(document).ready(function(){
   var clickedTwice = null;
   $('#1a').click(function(){
     $('#question-two').show(215);
-    $('#1aa').css('background','brown');
-    $('#1aa').css('background','brown');
+    $('#1aa').addClass('clicked')
+    $('#1a').addClass('clicked')
     questionOne = 10;
   });
   $('#1a').dblclick(function(){
     $('#question-two').hide(215);
+    $('#1aa').removeClass('clicked')
+    $('#1a').removeClass('clicked')
     questionOne = 0;
   });
   console.log(questionOne)
+  
 });

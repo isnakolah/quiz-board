@@ -128,3 +128,16 @@ body {
 .question-alert:hover {
   cursor: none;
 }
+button:active,
+button:focus {
+  outline: none;
+}
+.clicked,
+.clicked:hover {
+  background-color: grey;
+  color: azure;
+}
+input {
+  outline: none;
+  border: none;
+}
