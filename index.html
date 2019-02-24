@@ -10,7 +10,7 @@
     <title>Quiz Board</title>
 </head>
 <body>
-    <div class="container"><hr><br>
+    <div class="container" id="intro"><hr><br>
         <div class="card bg-secondary text-light">
             <div class="row">
                 <div class="col-md-7">
@@ -33,24 +33,27 @@
                             </ol>
                         </div>
                         <div class="card-footer bg-info text-light">
-                            <button class="start"> <a href="#">Begin Test</a></button>
+                            <input type="button" value="Begin Test" class="start">
+                            <!--<button class="start"> <a href="#">Begin Test</a></button>-->
                         </div>
                     </div>
                 </div>
             </div>
         </div><br><hr>
         <!--This section only appears after you have clicked the begin button-->
-        <div id="questions">
-            
+    </div> 
+    <div id="question-1" class="container"><hr><br>
+        <div class="row">
+            <div class="col-md-4 bg-info jumbotron">
+                <h2>What is JavaScript</h2>
+            </div>
+            <div class="col-md-8 bg-light">
 
-        </div>
-    </div>
-    
+            </div>
+        </div><br><hr>
+    </div>  
 </body>
 <footer>
-    <!--Loading the CDN first-->
-    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-    <!--If CDN doesn't load use the local version-->
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
 </footer>

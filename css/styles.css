@@ -28,7 +28,8 @@ body {
   margin: 0 auto;
   position: relative;
   top: 50%;
-  font-family: serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
 }
 .start:hover {
   background-color: rgb(70, 68, 64);
@@ -72,4 +73,7 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   background-attachment: fixed;
+}
+#question-1 {
+  display: none;
 }
