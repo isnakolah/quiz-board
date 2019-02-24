@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/")
+  background: url("img/hacker.jpg");
 }
 .jumbotron {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,5 +65,11 @@ a:hover {
   color: white;
 }
 .container {
-  margin-top: 10rem;
+  margin-top: 10%;
+}
+body {
+  background-image: linear-gradient(to bottom right, rgb(90, 88, 88),rgb(251, 247, 247));
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
 }
