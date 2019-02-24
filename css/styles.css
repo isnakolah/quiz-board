@@ -94,5 +94,7 @@ body {
   margin: 0;
 }
 .header-questions {
-  
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: teal;
 }
