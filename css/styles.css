@@ -89,7 +89,8 @@ body {
 #question-seven,
 #question-eight,
 #question-ten,
-#submit {
+#submit,
+#time {
   display: none;
 }
 .question-footer {

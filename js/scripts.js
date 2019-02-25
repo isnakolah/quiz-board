@@ -1,70 +1,99 @@
 $(document).ready(function(){
   var questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen, totalMarks;
   questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen, totalMarks = 0;
+  var safe = 0;
   $('#begin').click(function(){
-    $('#question-1').show(350);
-    $('#intro').hide(10);
+    $('#question-1').fadeIn(350);
+    $('#intro').fadeOut(10);
+    //introducing a timer
+     setTimeout(function(){
+    //using the confirm
+    //making sure that the timer works only when results is not clicked.
+    if ( safe === 10 ) {
+      return true;
+      } else {
+        var wakati = confirm('Time is up, cancel to continue. Ok will give you the results \n If you continue be deducted 5 marks');
+        if (wakati == true ){
+          //penalty for the question
+          $('#time').fadeIn(1000);
+          $('#question-1, #question-2, #question-3, #question-4, #question-5, #question-6, #question-7, #question-8, question-9, question-10 ').fadeOut(100);
+        }else {
+          totalMarks -=5;
+        }
+      }
+    }, 600000)
   });
   $('#next1').click(function(){
-    $('#question-2').show(350);
-    $('#question-1').hide(10);
+    $('#question-2').fadeIn(350);
+    $('#question-1').fadeOut(10);
     totalMarks += questionOne;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   })
   $('#next2').click(function(){
-    $('#question-3').show(350);
-    $('#question-2').hide(10);
+    $('#question-3').fadeIn(350);
+    $('#question-2').fadeOut(10);
     totalMarks += questionTwo;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   })
   $('#next3').click(function(){
-    $('#question-4').show(350);
-    $('#question-3').hide(10);
+    $('#question-4').fadeIn(350);
+    $('#question-3').fadeOut(10);
     totalMarks += questionThree;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   });
   $('#next4').click(function(){
-    $('#question-5').show(350);
-    $('#question-4').hide(10);
+    $('#question-5').fadeIn(350);
+    $('#question-4').fadeOut(10);
     totalMarks += questionFour;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   });
   $('#next5').click(function(){
-    $('#question-6').show(350);
-    $('#question-5').hide(10);
+    $('#question-6').fadeIn(350);
+    $('#question-5').fadeOut(10);
     totalMarks += questionFive;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   });
   $('#next6').click(function(){
-    $('#question-7').show(350);
-    $('#question-6').hide(10);
+    $('#question-7').fadeIn(350);
+    $('#question-6').fadeOut(10);
     totalMarks += questionSix;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   });
   $('#next7').click(function(){
-    $('#question-8').show(350);
-    $('#question-7').hide(10);
+    $('#question-8').fadeIn(350);
+    $('#question-7').fadeOut(10);
     totalMarks += questionSeven;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   });
   $('#next8').click(function(){
-    $('#question-9').show(350);
-    $('#question-8').hide(10);
+    $('#question-9').fadeIn(350);
+    $('#question-8').fadeOut(10);
     totalMarks += questionEight;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   });
   $('#next9').click(function(){
-    $('#question-10').show(350);
-    $('#question-9').hide(10);
+    $('#question-10').fadeIn(350);
+    $('#question-9').fadeOut(10);
     totalMarks += questionNine;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
   });
     //Checking the results of the test.
   $('#results').click(function(){ //id introduction called results for the results button.
-    $('#check').show(350);
-    $('#question-10').hide(10);
+    $('#check').fadeIn(1000);
+    $('#question-10').fadeOut(100);
     totalMarks += questionTen;
     console.log('Total marks are ; '+totalMarks)
+    safe ++
+    
   })
   /*__________________________________
     Question One
