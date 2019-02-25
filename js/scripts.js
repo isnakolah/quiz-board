@@ -42,7 +42,7 @@ $(document).ready(function(){
     $('#question-9').hide(10);
   });
     //Checking the results of the test.
-  $('#results').click(function(){
+  $('#results').click(function(){ //id introduction called results for the results button.
     $('#check').show(350);
     $('#question-10').hide(10);
   })
@@ -73,31 +73,50 @@ $(document).ready(function(){
   });
 
   // trying to make a function that clicks the questions.
+  // selection of answer one
   $('#2a').click(function(){
     $('#question-three').show(215);
     $('#2aa').addClass('clicked')
     $('#2a').addClass('clicked')
     $('#2bb').removeClass('clicked')
     $('#2b').removeClass('clicked')
-    return true;
+    $('#2cc').removeClass('clicked')
+    $('#2c').removeClass('clicked')
   });
   $('#2a').dblclick(function(){
     $('#question-three').hide(215);
     $('#2aa').removeClass('clicked')
     $('#2a').removeClass('clicked')
   });
-  console.log(questionOne)
+  //answer two selection
   $('#2b').click(function(){
     $('#question-three').show(215);
     $('#2bb').addClass('clicked')
     $('#2b').addClass('clicked')
     $('#2aa').removeClass('clicked')
     $('#2a').removeClass('clicked')
+    $('#2cc').removeClass('clicked')
+    $('#2c').removeClass('clicked')
   });
   $('#2b').dblclick(function(){
     $('#question-three').hide(215);
     $('#2bb').removeClass('clicked')
     $('#2b').removeClass('clicked')
+  });
+  //answer three selection.
+  $('#2c').click(function(){
+    $('#question-three').show(215);
+    $('#2cc').addClass('clicked')
+    $('#2c').addClass('clicked')
+    $('#2aa').removeClass('clicked')
+    $('#2a').removeClass('clicked')
+    $('#2bb').removeClass('clicked')
+    $('#2b').removeClass('clicked')
+  });
+  $('#2c').dblclick(function(){
+    $('#question-three').hide(215);
+    $('#2cc').removeClass('clicked')
+    $('#2c').removeClass('clicked')
   });
 });
 //The end of the code
