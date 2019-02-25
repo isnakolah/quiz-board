@@ -46,6 +46,10 @@ $(document).ready(function(){
     $('#check').show(350);
     $('#question-10').hide(10);
   })
+  /*__________________________________
+    Question One
+    __________________________________
+  */
   $('#1a').click(function(){
     $('#question-two').show(215);
     $('#1aa').addClass('clicked')
@@ -73,7 +77,10 @@ $(document).ready(function(){
   });
 
   // trying to make a function that clicks the questions.
-  // selection of answer one
+  /*__________________________________
+    Question Two
+    __________________________________
+  */
   $('#2a').click(function(){
     $('#question-three').show(215);
     $('#2aa').addClass('clicked')
@@ -117,6 +124,153 @@ $(document).ready(function(){
     $('#question-three').hide(215);
     $('#2cc').removeClass('clicked')
     $('#2c').removeClass('clicked')
+  });
+  /*__________________________________
+    Question Three
+    __________________________________
+  */
+  //selection of the first answer
+  $('#3a').click(function(){
+    $('#question-four').show(215);
+    $('#3aa').addClass('clicked')
+    $('#3a').addClass('clicked')
+    $('#3bb').removeClass('clicked')
+    $('#3b').removeClass('clicked')
+    $('#3cc').removeClass('clicked')
+    $('#3c').removeClass('clicked')
+  });
+  $('#3a').dblclick(function(){
+    $('#question-four').hide(215);
+    $('#3aa').removeClass('clicked')
+    $('#3a').removeClass('clicked')
+  });
+  //answer two selection
+  $('#3b').click(function(){
+    $('#question-four').show(215);
+    $('#3bb').addClass('clicked')
+    $('#3b').addClass('clicked')
+    $('#3aa').removeClass('clicked')
+    $('#3a').removeClass('clicked')
+    $('#3cc').removeClass('clicked')
+    $('#3c').removeClass('clicked')
+  });
+  $('#3b').dblclick(function(){
+    $('#question-four').hide(215);
+    $('#3bb').removeClass('clicked')
+    $('#3b').removeClass('clicked')
+  });
+  //answer three selection.
+  $('#3c').click(function(){
+    $('#question-four').show(215);
+    $('#3cc').addClass('clicked')
+    $('#3c').addClass('clicked')
+    $('#3aa').removeClass('clicked')
+    $('#3a').removeClass('clicked')
+    $('#3bb').removeClass('clicked')
+    $('#3b').removeClass('clicked')
+  });
+  $('#3c').dblclick(function(){
+    $('#question-four').hide(215);
+    $('#3cc').removeClass('clicked')
+    $('#3c').removeClass('clicked')
+  });
+  /*__________________________________
+    Question Four
+    __________________________________
+  */
+  //selection of the first answer
+  $('#4a').click(function(){
+    $('#question-five').show(215);
+    $('#4aa').addClass('clicked')
+    $('#4a').addClass('clicked')
+    $('#4bb').removeClass('clicked')
+    $('#4b').removeClass('clicked')
+    $('#4cc').removeClass('clicked')
+    $('#4c').removeClass('clicked')
+  });
+  $('#4a').dblclick(function(){
+    $('#question-five').hide(215);
+    $('#4aa').removeClass('clicked')
+    $('#4a').removeClass('clicked')
+  });
+  //answer two selection
+  $('#4b').click(function(){
+    $('#question-five').show(215);
+    $('#4bb').addClass('clicked')
+    $('#4b').addClass('clicked')
+    $('#4aa').removeClass('clicked')
+    $('#4a').removeClass('clicked')
+    $('#4cc').removeClass('clicked')
+    $('#4c').removeClass('clicked')
+  });
+  $('#4b').dblclick(function(){
+    $('#question-five').hide(215);
+    $('#4bb').removeClass('clicked')
+    $('#4b').removeClass('clicked')
+  });
+  //answer three selection.
+  $('#4c').click(function(){
+    $('#question-five').show(215);
+    $('#4cc').addClass('clicked')
+    $('#4c').addClass('clicked')
+    $('#4aa').removeClass('clicked')
+    $('#4a').removeClass('clicked')
+    $('#4bb').removeClass('clicked')
+    $('#4b').removeClass('clicked')
+  });
+  $('#4c').dblclick(function(){
+    $('#question-five').hide(215);
+    $('#4cc').removeClass('clicked')
+    $('#4c').removeClass('clicked')
+  });
+  /*__________________________________
+    Question Five
+    __________________________________
+  */
+  //selection of the first answer
+  $('#4a').click(function(){
+    $('#question-five').show(215);
+    $('#4aa').addClass('clicked')
+    $('#4a').addClass('clicked')
+    $('#4bb').removeClass('clicked')
+    $('#4b').removeClass('clicked')
+    $('#4cc').removeClass('clicked')
+    $('#4c').removeClass('clicked')
+  });
+  $('#4a').dblclick(function(){
+    $('#question-five').hide(215);
+    $('#4aa').removeClass('clicked')
+    $('#4a').removeClass('clicked')
+  });
+  //answer two selection
+  $('#4b').click(function(){
+    $('#question-five').show(215);
+    $('#4bb').addClass('clicked')
+    $('#4b').addClass('clicked')
+    $('#4aa').removeClass('clicked')
+    $('#4a').removeClass('clicked')
+    $('#4cc').removeClass('clicked')
+    $('#4c').removeClass('clicked')
+  });
+  $('#4b').dblclick(function(){
+    $('#question-five').hide(215);
+    $('#4bb').removeClass('clicked')
+    $('#4b').removeClass('clicked')
+  });
+  //answer three selection.
+  $('#4c').click(function(){
+    $('#question-five').show(215);
+    $('#4cc').addClass('clicked')
+    $('#4c').addClass('clicked')
+    $('#4aa').removeClass('clicked')
+    $('#4a').removeClass('clicked')
+    $('#4bb').removeClass('clicked')
+    $('#4b').removeClass('clicked')
+  });
+  $('#4c').dblclick(function(){
+    $('#question-five').hide(215);
+    $('#4cc').removeClass('clicked')
+    $('#4c').removeClass('clicked')
   });
 });
 //The end of the code
