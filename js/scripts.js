@@ -20,35 +20,51 @@ $(document).ready(function(){
   $('#next3').click(function(){
     $('#question-4').show(350);
     $('#question-3').hide(10);
+    totalMarks += questionThree;
+    console.log('Total marks are ; '+totalMarks)
   });
   $('#next4').click(function(){
     $('#question-5').show(350);
     $('#question-4').hide(10);
+    totalMarks += questionFour;
+    console.log('Total marks are ; '+totalMarks)
   });
   $('#next5').click(function(){
     $('#question-6').show(350);
     $('#question-5').hide(10);
+    totalMarks += questionFive;
+    console.log('Total marks are ; '+totalMarks)
   });
   $('#next6').click(function(){
     $('#question-7').show(350);
     $('#question-6').hide(10);
+    totalMarks += questionSix;
+    console.log('Total marks are ; '+totalMarks)
   });
   $('#next7').click(function(){
     $('#question-8').show(350);
     $('#question-7').hide(10);
+    totalMarks += questionSeven;
+    console.log('Total marks are ; '+totalMarks)
   });
   $('#next8').click(function(){
     $('#question-9').show(350);
     $('#question-8').hide(10);
+    totalMarks += questionEight;
+    console.log('Total marks are ; '+totalMarks)
   });
   $('#next9').click(function(){
     $('#question-10').show(350);
     $('#question-9').hide(10);
+    totalMarks += questionNine;
+    console.log('Total marks are ; '+totalMarks)
   });
     //Checking the results of the test.
   $('#results').click(function(){ //id introduction called results for the results button.
     $('#check').show(350);
     $('#question-10').hide(10);
+    totalMarks += questionTen;
+    console.log('Total marks are ; '+totalMarks)
   })
   /*__________________________________
     Question One
@@ -155,11 +171,13 @@ $(document).ready(function(){
     $('#3b').removeClass('clicked')
     $('#3cc').removeClass('clicked')
     $('#3c').removeClass('clicked')
+    questionThree = 10;
   });
   $('#3a').dblclick(function(){
     $('#question-four').hide(215);
     $('#3aa').removeClass('clicked')
     $('#3a').removeClass('clicked')
+    questionThree = 0;
   });
   //answer two selection
   $('#3b').click(function(){
@@ -170,11 +188,13 @@ $(document).ready(function(){
     $('#3a').removeClass('clicked')
     $('#3cc').removeClass('clicked')
     $('#3c').removeClass('clicked')
+    questionThree = 0;
   });
   $('#3b').dblclick(function(){
     $('#question-four').hide(215);
     $('#3bb').removeClass('clicked')
     $('#3b').removeClass('clicked')
+    questionThree = 0;
   });
   //answer three selection.
   $('#3c').click(function(){
@@ -185,11 +205,13 @@ $(document).ready(function(){
     $('#3a').removeClass('clicked')
     $('#3bb').removeClass('clicked')
     $('#3b').removeClass('clicked')
+    questionThree = 0;
   });
   $('#3c').dblclick(function(){
     $('#question-four').hide(215);
     $('#3cc').removeClass('clicked')
     $('#3c').removeClass('clicked')
+    questionThree = 0;
   });
   /*__________________________________
     Question Four
@@ -204,11 +226,13 @@ $(document).ready(function(){
     $('#4b').removeClass('clicked')
     $('#4cc').removeClass('clicked')
     $('#4c').removeClass('clicked')
+    questionFour = 10;
   });
   $('#4a').dblclick(function(){
     $('#question-five').hide(215);
     $('#4aa').removeClass('clicked')
     $('#4a').removeClass('clicked')
+    questionFour = 0;
   });
   //answer two selection
   $('#4b').click(function(){
@@ -219,11 +243,13 @@ $(document).ready(function(){
     $('#4a').removeClass('clicked')
     $('#4cc').removeClass('clicked')
     $('#4c').removeClass('clicked')
+    questionFour = 0;
   });
   $('#4b').dblclick(function(){
     $('#question-five').hide(215);
     $('#4bb').removeClass('clicked')
     $('#4b').removeClass('clicked')
+    questionFour = 0;
   });
   //answer three selection.
   $('#4c').click(function(){
@@ -234,11 +260,13 @@ $(document).ready(function(){
     $('#4a').removeClass('clicked')
     $('#4bb').removeClass('clicked')
     $('#4b').removeClass('clicked')
+    questionFour = 0;
   });
   $('#4c').dblclick(function(){
     $('#question-five').hide(215);
     $('#4cc').removeClass('clicked')
     $('#4c').removeClass('clicked')
+    questionFour = 0;
   });
   /*__________________________________
     Question Five
@@ -253,11 +281,13 @@ $(document).ready(function(){
     $('#5b').removeClass('clicked')
     $('#5cc').removeClass('clicked')
     $('#5c').removeClass('clicked')
+    questionFive = 10;
   });
   $('#5a').dblclick(function(){
     $('#question-six').hide(215);
     $('#5aa').removeClass('clicked')
     $('#5a').removeClass('clicked')
+    questionFive = 0;
   });
   //answer two selection
   $('#5b').click(function(){
@@ -268,11 +298,13 @@ $(document).ready(function(){
     $('#5a').removeClass('clicked')
     $('#5cc').removeClass('clicked')
     $('#5c').removeClass('clicked')
+    questionFive = 0;
   });
   $('#5b').dblclick(function(){
     $('#question-six').hide(215);
     $('#5bb').removeClass('clicked')
     $('#5b').removeClass('clicked')
+    questionFive = 0;
   });
   //answer three selection.
   $('#5c').click(function(){
@@ -283,11 +315,13 @@ $(document).ready(function(){
     $('#5a').removeClass('clicked')
     $('#5bb').removeClass('clicked')
     $('#5b').removeClass('clicked')
+    questionFive = 0;
   });
   $('#5c').dblclick(function(){
     $('#question-six').hide(215);
     $('#5cc').removeClass('clicked')
     $('#5c').removeClass('clicked')
+    questionFive = 0;
   });
   /*__________________________________
     Question Six
@@ -302,11 +336,13 @@ $(document).ready(function(){
     $('#6b').removeClass('clicked')
     $('#6cc').removeClass('clicked')
     $('#6c').removeClass('clicked')
+    questionSix = 10;
   });
   $('#6a').dblclick(function(){
     $('#question-seven').hide(215);
     $('#6aa').removeClass('clicked')
     $('#6a').removeClass('clicked')
+    questionSix = 0;
   });
   //answer two selection
   $('#6b').click(function(){
@@ -317,11 +353,13 @@ $(document).ready(function(){
     $('#6a').removeClass('clicked')
     $('#6cc').removeClass('clicked')
     $('#6c').removeClass('clicked')
+    questionSix = 0;
   });
   $('#6b').dblclick(function(){
     $('#question-seven').hide(215);
     $('#6bb').removeClass('clicked')
     $('#6b').removeClass('clicked')
+    questionSix = 0;
   });
   //answer three selection.
   $('#6c').click(function(){
@@ -332,11 +370,13 @@ $(document).ready(function(){
     $('#6a').removeClass('clicked')
     $('#6bb').removeClass('clicked')
     $('#6b').removeClass('clicked')
+    questionSix = 0;
   });
   $('#6c').dblclick(function(){
     $('#question-seven').hide(215);
     $('#6cc').removeClass('clicked')
     $('#6c').removeClass('clicked')
+    questionSix = 0;
   });
   /*__________________________________
     Question Seven
@@ -351,11 +391,13 @@ $(document).ready(function(){
     $('#7b').removeClass('clicked')
     $('#7cc').removeClass('clicked')
     $('#7c').removeClass('clicked')
+    questionSeven = 0;
   });
   $('#7a').dblclick(function(){
     $('#question-eight').hide(215);
     $('#7aa').removeClass('clicked')
     $('#7a').removeClass('clicked')
+    questionSeven = 0;
   });
   //answer two selection
   $('#7b').click(function(){
@@ -366,11 +408,13 @@ $(document).ready(function(){
     $('#7a').removeClass('clicked')
     $('#7cc').removeClass('clicked')
     $('#7c').removeClass('clicked')
+    questionSeven = 10;
   });
   $('#7b').dblclick(function(){
     $('#question-eight').hide(215);
     $('#7bb').removeClass('clicked')
     $('#7b').removeClass('clicked')
+    questionSeven = 0;
   });
   //answer three selection.
   $('#7c').click(function(){
@@ -381,11 +425,13 @@ $(document).ready(function(){
     $('#7a').removeClass('clicked')
     $('#7bb').removeClass('clicked')
     $('#7b').removeClass('clicked')
+    questionSeven = 0;
   });
   $('#7c').dblclick(function(){
     $('#question-eight').hide(215);
     $('#7cc').removeClass('clicked')
     $('#7c').removeClass('clicked')
+    questionSeven = 0;
   });
   /*__________________________________
     Question Eight
@@ -400,11 +446,13 @@ $(document).ready(function(){
     $('#8b').removeClass('clicked')
     $('#8cc').removeClass('clicked')
     $('#8c').removeClass('clicked')
+    questionEight = 0;
   });
   $('#8a').dblclick(function(){
     $('#question-nine').hide(215);
     $('#8aa').removeClass('clicked')
     $('#8a').removeClass('clicked')
+    questionEight = 0;
   });
   //answer two selection
   $('#8b').click(function(){
@@ -415,11 +463,13 @@ $(document).ready(function(){
     $('#8a').removeClass('clicked')
     $('#8cc').removeClass('clicked')
     $('#8c').removeClass('clicked')
+    questionEight = 10;
   });
   $('#8b').dblclick(function(){
     $('#question-nine').hide(215);
     $('#8bb').removeClass('clicked')
     $('#8b').removeClass('clicked')
+    questionEight = 0;
   });
   //answer three selection.
   $('#8c').click(function(){
@@ -430,11 +480,13 @@ $(document).ready(function(){
     $('#8a').removeClass('clicked')
     $('#8bb').removeClass('clicked')
     $('#8b').removeClass('clicked')
+    questionEight = 0;
   });
   $('#8c').dblclick(function(){
     $('#question-nine').hide(215);
     $('#8cc').removeClass('clicked')
     $('#8c').removeClass('clicked')
+    questionEight = 0;
   });
   /*__________________________________
     Question Nine
@@ -449,11 +501,13 @@ $(document).ready(function(){
     $('#9b').removeClass('clicked')
     $('#9cc').removeClass('clicked')
     $('#9c').removeClass('clicked')
+    questionNine = 0;
   });
   $('#9a').dblclick(function(){
     $('#question-ten').hide(215);
     $('#9aa').removeClass('clicked')
     $('#9a').removeClass('clicked')
+    questionNine = 0;
   });
   //answer two selection
   $('#9b').click(function(){
@@ -464,11 +518,13 @@ $(document).ready(function(){
     $('#9a').removeClass('clicked')
     $('#9cc').removeClass('clicked')
     $('#9c').removeClass('clicked')
+    questionNine = 10;
   });
   $('#9b').dblclick(function(){
     $('#question-ten').hide(215);
     $('#9bb').removeClass('clicked')
     $('#9b').removeClass('clicked')
+    questionNine = 0;
   });
   //answer three selection.
   $('#9c').click(function(){
@@ -479,11 +535,13 @@ $(document).ready(function(){
     $('#9a').removeClass('clicked')
     $('#9bb').removeClass('clicked')
     $('#9b').removeClass('clicked')
+    questionNine = 0;
   });
   $('#9c').dblclick(function(){
     $('#question-ten').hide(215);
     $('#9cc').removeClass('clicked')
     $('#9c').removeClass('clicked')
+    questionNine = 0;
   });
   /*__________________________________
     Question Ten
@@ -498,11 +556,13 @@ $(document).ready(function(){
     $('#10b').removeClass('clicked')
     $('#10cc').removeClass('clicked')
     $('#10c').removeClass('clicked')
+    questionTen = 0;
   });
   $('#10a').dblclick(function(){
     $('#submit').hide(215);
     $('#10aa').removeClass('clicked')
     $('#10a').removeClass('clicked')
+    questionTen = 0;
   });
   //answer two selection
   $('#10b').click(function(){
@@ -513,11 +573,13 @@ $(document).ready(function(){
     $('#10a').removeClass('clicked')
     $('#10cc').removeClass('clicked')
     $('#10c').removeClass('clicked')
+    questionTen = 0;
   });
   $('#10b').dblclick(function(){
     $('#submit').hide(215);
     $('#10bb').removeClass('clicked')
     $('#10b').removeClass('clicked')
+    questionTen = 0;
   });
   //answer three selection.
   $('#10c').click(function(){
@@ -528,11 +590,13 @@ $(document).ready(function(){
     $('#10a').removeClass('clicked')
     $('#10bb').removeClass('clicked')
     $('#10b').removeClass('clicked')
+    questionTen = 10;
   });
   $('#10c').dblclick(function(){
     $('#submit').hide(215);
     $('#10cc').removeClass('clicked')
     $('#10c').removeClass('clicked')
+    questionTen = 0;
   });
 });
 //The end of the code
