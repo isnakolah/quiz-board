@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  let totalMarks;
-  var questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen;
+  var questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen, totalMarks;
+  questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen, totalMarks = 0;
   $('#begin').click(function(){
     $('#question-1').show(350);
     $('#intro').hide(10);
@@ -8,10 +8,14 @@ $(document).ready(function(){
   $('#next1').click(function(){
     $('#question-2').show(350);
     $('#question-1').hide(10);
+    totalMarks += questionOne;
+    console.log('Total marks are ; '+totalMarks)
   })
   $('#next2').click(function(){
     $('#question-3').show(350);
     $('#question-2').hide(10);
+    totalMarks += questionTwo;
+    console.log('Total marks are ; '+totalMarks)
   })
   $('#next3').click(function(){
     $('#question-4').show(350);
@@ -56,26 +60,33 @@ $(document).ready(function(){
     $('#1a').addClass('clicked')
     $('#1bb').removeClass('clicked')
     $('#1b').removeClass('clicked')
+    questionOne = 10;
+    console.log(questionOne)
   });
+  //dicrediting the other scores.
   $('#1a').dblclick(function(){
     $('#question-two').hide(215);
     $('#1aa').removeClass('clicked')
     $('#1a').removeClass('clicked')
+    questionOne = 0;
+    console.log(questionOne)
   });
-  console.log(questionOne)
   $('#1b').click(function(){
     $('#question-two').show(215);
     $('#1bb').addClass('clicked')
     $('#1b').addClass('clicked')
     $('#1aa').removeClass('clicked')
     $('#1a').removeClass('clicked')
+    questionOne = 0;
+    console.log(questionOne)
   });
   $('#1b').dblclick(function(){
     $('#question-two').hide(215);
     $('#1bb').removeClass('clicked')
     $('#1b').removeClass('clicked')
+    questionOne = 0;
+    console.log(questionOne);
   });
-
   // trying to make a function that clicks the questions.
   /*__________________________________
     Question Two
@@ -89,11 +100,13 @@ $(document).ready(function(){
     $('#2b').removeClass('clicked')
     $('#2cc').removeClass('clicked')
     $('#2c').removeClass('clicked')
+    questionTwo = 0;
   });
   $('#2a').dblclick(function(){
     $('#question-three').hide(215);
     $('#2aa').removeClass('clicked')
     $('#2a').removeClass('clicked')
+    questionTwo = 0;
   });
   //answer two selection
   $('#2b').click(function(){
@@ -104,11 +117,13 @@ $(document).ready(function(){
     $('#2a').removeClass('clicked')
     $('#2cc').removeClass('clicked')
     $('#2c').removeClass('clicked')
+    questionTwo = 10;
   });
   $('#2b').dblclick(function(){
     $('#question-three').hide(215);
     $('#2bb').removeClass('clicked')
     $('#2b').removeClass('clicked')
+    questionTwo = 0;
   });
   //answer three selection.
   $('#2c').click(function(){
@@ -119,11 +134,13 @@ $(document).ready(function(){
     $('#2a').removeClass('clicked')
     $('#2bb').removeClass('clicked')
     $('#2b').removeClass('clicked')
+    questionTwo = 0;
   });
   $('#2c').dblclick(function(){
     $('#question-three').hide(215);
     $('#2cc').removeClass('clicked')
     $('#2c').removeClass('clicked')
+    questionTwo = 0;
   });
   /*__________________________________
     Question Three
@@ -228,8 +245,8 @@ $(document).ready(function(){
     __________________________________
   */
   //selection of the first answer
-  $('#6a').click(function(){
-    $('#question-seven').show(215);
+  $('#5a').click(function(){
+    $('#question-six').show(215);
     $('#5aa').addClass('clicked')
     $('#5a').addClass('clicked')
     $('#5bb').removeClass('clicked')

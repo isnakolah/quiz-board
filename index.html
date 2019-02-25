@@ -9,6 +9,10 @@
     <title>Quiz Board</title>
 </head>
 <body>
+    <div id="check" class="container">
+        <p>results come here</p>
+        
+    </div>
     <div class="container" id="intro"><hr><br>
         <div class="card bg-secondary text-light">
             <div class="row">
@@ -291,11 +295,41 @@
             </div>
         </div><br><hr>
     </div>
+    <!--Question ten starts here-->
+    <div id="question-10" class="container"><hr><br>
+        <div card>
+            <div class="card-header jumbotron header-questions">
+                <h1>Question Ten</h1>
+            </div>
+            <div class="card-body question-body">
+                <div class="row question-body">
+                    <div class="col-md-5 bg-info jumbotron">
+                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                    </div>
+                    <div class="col-md-7 bg-light">
+                        <ol class="card-body bg-light list-group list-group-flush">
+                            <li class="list-group-item answers"id="10aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="10a"> </li>
+                            <li class="list-group-item answers" id="10bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="10b"> </li>
+                            <li class="list-group-item answers" id="10cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="10c"> </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="card-footer jumbotron text-light question-footer">
+                    <div id="submit">
+                        <input type="button" value="Results" class="start questions"id="results">
+                        <small class="question-alert">Click once to choose an answer and double click to deselect.</small>
+                    </div>
+                </div>
+            </div>
+        </div><br><hr>
+    </div>
+    <div id="check">
+        <p>results come here</p>
+
+    </div>
 </body>
 <footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/calc.js"></script>
 </footer>
 </html>
