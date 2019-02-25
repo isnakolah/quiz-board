@@ -419,5 +419,103 @@ $(document).ready(function(){
     $('#8cc').removeClass('clicked')
     $('#8c').removeClass('clicked')
   });
+  /*__________________________________
+    Question Nine
+    __________________________________
+  */
+  //selection of the first answer
+  $('#9a').click(function(){
+    $('#question-ten').show(215);
+    $('#9aa').addClass('clicked')
+    $('#9a').addClass('clicked')
+    $('#9bb').removeClass('clicked')
+    $('#9b').removeClass('clicked')
+    $('#9cc').removeClass('clicked')
+    $('#9c').removeClass('clicked')
+  });
+  $('#9a').dblclick(function(){
+    $('#question-ten').hide(215);
+    $('#9aa').removeClass('clicked')
+    $('#9a').removeClass('clicked')
+  });
+  //answer two selection
+  $('#9b').click(function(){
+    $('#question-ten').show(215);
+    $('#9bb').addClass('clicked')
+    $('#9b').addClass('clicked')
+    $('#9aa').removeClass('clicked')
+    $('#9a').removeClass('clicked')
+    $('#9cc').removeClass('clicked')
+    $('#9c').removeClass('clicked')
+  });
+  $('#9b').dblclick(function(){
+    $('#question-ten').hide(215);
+    $('#9bb').removeClass('clicked')
+    $('#9b').removeClass('clicked')
+  });
+  //answer three selection.
+  $('#9c').click(function(){
+    $('#question-ten').show(215);
+    $('#9cc').addClass('clicked')
+    $('#9c').addClass('clicked')
+    $('#9aa').removeClass('clicked')
+    $('#9a').removeClass('clicked')
+    $('#9bb').removeClass('clicked')
+    $('#9b').removeClass('clicked')
+  });
+  $('#9c').dblclick(function(){
+    $('#question-ten').hide(215);
+    $('#9cc').removeClass('clicked')
+    $('#9c').removeClass('clicked')
+  });
+  /*__________________________________
+    Question Ten
+    __________________________________
+  */
+  //selection of the first answer
+  $('#10a').click(function(){
+    $('#submit').show(215);
+    $('#10aa').addClass('clicked')
+    $('#10a').addClass('clicked')
+    $('#10bb').removeClass('clicked')
+    $('#10b').removeClass('clicked')
+    $('#10cc').removeClass('clicked')
+    $('#10c').removeClass('clicked')
+  });
+  $('#10a').dblclick(function(){
+    $('#submit').hide(215);
+    $('#10aa').removeClass('clicked')
+    $('#10a').removeClass('clicked')
+  });
+  //answer two selection
+  $('#10b').click(function(){
+    $('#submit').show(215);
+    $('#10bb').addClass('clicked')
+    $('#10b').addClass('clicked')
+    $('#10aa').removeClass('clicked')
+    $('#10a').removeClass('clicked')
+    $('#10cc').removeClass('clicked')
+    $('#10c').removeClass('clicked')
+  });
+  $('#10b').dblclick(function(){
+    $('#submit').hide(215);
+    $('#10bb').removeClass('clicked')
+    $('#10b').removeClass('clicked')
+  });
+  //answer three selection.
+  $('#10c').click(function(){
+    $('#submit').show(215);
+    $('#10cc').addClass('clicked')
+    $('#10c').addClass('clicked')
+    $('#10aa').removeClass('clicked')
+    $('#10a').removeClass('clicked')
+    $('#10bb').removeClass('clicked')
+    $('#10b').removeClass('clicked')
+  });
+  $('#10c').dblclick(function(){
+    $('#submit').hide(215);
+    $('#10cc').removeClass('clicked')
+    $('#10c').removeClass('clicked')
+  });
 });
 //The end of the code
