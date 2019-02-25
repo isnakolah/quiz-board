@@ -80,7 +80,7 @@ body {
 #question-8,
 #question-9,
 #question-10,
-#check,
+/*#check,*/
 #question-two,
 #question-three,
 #question-four,
@@ -158,4 +158,16 @@ button:focus {
 input {
   outline: none;
   border: none;
+}
+.pad {
+  padding-top: 3rem;
+  padding-bottom: 3.1rem;
+}
+.correct {
+  border: 3px;
+  border-color: green;
+}
+.wrong {
+  border: 3px;
+  border-color: red;
 }

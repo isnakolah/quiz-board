@@ -9,9 +9,28 @@
     <title>Quiz Board</title>
 </head>
 <body>
-    <div id="check" class="container">
-        <p>results come here</p>
-        
+    <div id="check" class="container card bg-secondary">
+        <div class="card-header bg-secondary text-light">
+            <h2>Congratulations you have finished the test. Here are your results</h2>
+            <div class="card-body bg-secondary">
+                <div class="row">
+                    <div class="col-md-8 bg-info text-dark jumbotron">
+                        <!--The place where marks will be input as well as the grade-->
+                        <h3>Your perfomance is <span id="perform"></span>. With <span id="marks"></span> and <span id="grade"></span> Continue with your venture in JavaScript. All the best in your coding journey. <span id="time-f"></span> </h3>
+                    </div>
+                    <!--Saying the number of questions you got right-->
+                    <div class="col-md-4 bg-primary list-group list-group-flush">
+                        <ol>
+                            <li class="list-group-item bg-danger text-light pad">You got <span id="wrong"> questions wrong.</span></li>
+                            <li class="list-group-item bg-success text-light pad">You got <span id="right"></span> question right.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-secondary">
+                <input type="button" value="View marking" class="start questions" id="marking">
+            </div>
+        </div>
     </div>
     <div class="container" id="intro"><hr><br>
         <div class="card bg-secondary text-light">

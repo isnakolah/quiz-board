@@ -22,6 +22,9 @@ $(document).ready(function(){
         }
       }
     }, 600000)
+    var pass = [];
+    var fail = [];
+    //add the pushing to the arrays for questions got
   });
   $('#next1').click(function(){
     $('#question-2').fadeIn(350);
@@ -95,6 +98,17 @@ $(document).ready(function(){
     safe ++
     
   })
+    // adding the marking creteria of highlighting the correct answer
+    /*$('#marking').click(function(){
+      $('#check').fadeOut(100);
+      if(questionOne == 0){
+        $('question-1').addClass('wrong');
+        $('question-1').fadeIn(1000);
+      }else {
+        $('question-1').addClass('correct');
+        $('question-1').fadeOut(1000);
+      }
+    })*/
   /*__________________________________
     Question One
     __________________________________
