@@ -80,7 +80,9 @@ body {
 #question-8,
 #question-9,
 #question-10,
-/*#check,*/
+#check,
+#retake,
+#marking,
 #question-two,
 #question-three,
 #question-four,
@@ -88,9 +90,11 @@ body {
 #question-six,
 #question-seven,
 #question-eight,
+#question-nine,
 #question-ten,
-#submit,
-#time {
+#submit
+#timp,
+.mrt {
   display: none;
 }
 .question-footer {
@@ -170,4 +174,7 @@ input {
 .wrong {
   border: 3px;
   border-color: red;
+}
+.mrt {
+  margin: 10%;
 }

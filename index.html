@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-8 bg-info text-dark jumbotron">
                         <!--The place where marks will be input as well as the grade-->
-                        <h3>Your perfomance is <span id="perform"></span>. With <span id="marks"></span> and <span id="grade"></span> Continue with your venture in JavaScript. All the best in your coding journey. <span id="time-f"></span> </h3>
+                        <h3>Your perfomance is <span id="perform" class="text-secondary"></span>. You have a score of <span id="marks" class="text-secondary"></span>% which is <span id="grade" class="text-secondary"></span> Continue with your venture in JavaScript. All the best in your coding journey. <span id="time-f" class="text-secondary"></span> </h3>
                     </div>
                     <!--Saying the number of questions you got right-->
                     <div class="col-md-4 bg-primary list-group list-group-flush">
@@ -27,8 +27,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card-footer bg-secondary">
-                <input type="button" value="View marking" class="start questions" id="marking">
+            <div class="card-footer bg-secondary" id="retake">
+                <input type="button" value="Retake Test" class="start questions" id="marking">
             </div>
         </div>
     </div>
@@ -155,13 +155,13 @@
             <div class="card-body question-body">
                 <div class="row question-body">
                     <div class="col-md-5 bg-info jumbotron">
-                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                        <h2 class="text-light">One of the choices is <strong class="text-dark">not</strong> a core set of JavaScript language element</h2>
                     </div>
                     <div class="col-md-7 bg-light">
                         <ol class="card-body bg-light list-group list-group-flush">
-                            <li class="list-group-item answers"id="4aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="4a"> </li>
-                            <li class="list-group-item answers" id="4bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="4b"> </li>
-                            <li class="list-group-item answers" id="4cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="4c"> </li>
+                            <li class="list-group-item answers"id="4aa"> <input type="button" value="Operators" class="list-group-item answers" id="4a"> </li>
+                            <li class="list-group-item answers" id="4bb"> <input type="button" value="Control structures" class="list-group-item answers" id="4b"> </li>
+                            <li class="list-group-item answers" id="4cc"> <input type="button" value="Methods" class="list-group-item answers" id="4c"> </li>
                         </ol>
                     </div>
                 </div>
@@ -183,13 +183,13 @@
             <div class="card-body question-body">
                 <div class="row question-body">
                     <div class="col-md-5 bg-info jumbotron">
-                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                        <h2 class="text-light">David, a Moringa School Student, is unable to load his JavaScript file. Which of the following is the least likely problem</h2>
                     </div>
                     <div class="col-md-7 bg-light">
                         <ol class="card-body bg-light list-group list-group-flush">
-                            <li class="list-group-item answers"id="5aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="5a"> </li>
-                            <li class="list-group-item answers" id="5bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="5b"> </li>
-                            <li class="list-group-item answers" id="5cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="5c"> </li>
+                            <li class="list-group-item answers"id="5aa"> <input type="button" value="His code was not indented correctly thereby the browser was unable to load it because of that." class="list-group-item answers" id="5a"> </li>
+                            <li class="list-group-item answers" id="5bb"> <input type="button" value="David has syntax error in his JavaScript code. He schould run the console to see where  the error is." class="list-group-item answers" id="5b"> </li>
+                            <li class="list-group-item answers" id="5cc"> <input type="button" value="He did not link his JavaScript file to the HTML file." class="list-group-item answers" id="5c"> </li>
                         </ol>
                     </div>
                 </div>
@@ -211,13 +211,13 @@
             <div class="card-body question-body">
                 <div class="row question-body">
                     <div class="col-md-5 bg-info jumbotron">
-                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                        <h2 class="text-light">Which loop in the list provided is made up of four statements.</h2>
                     </div>
                     <div class="col-md-7 bg-light">
                         <ol class="card-body bg-light list-group list-group-flush">
-                            <li class="list-group-item answers"id="6aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="6a"> </li>
-                            <li class="list-group-item answers" id="6bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="6b"> </li>
-                            <li class="list-group-item answers" id="6cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="6c"> </li>
+                            <li class="list-group-item answers"id="6aa"> <input type="button" value="For loop." class="list-group-item answers" id="6a"> </li>
+                            <li class="list-group-item answers" id="6bb"> <input type="button" value="While loop." class="list-group-item answers" id="6b"> </li>
+                            <li class="list-group-item answers" id="6cc"> <input type="button" value="Do-for loop." class="list-group-item answers" id="6c"> </li>
                         </ol>
                     </div>
                 </div>
@@ -239,13 +239,13 @@
             <div class="card-body question-body">
                 <div class="row question-body">
                     <div class="col-md-5 bg-info jumbotron">
-                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                        <h2 class="text-light">In relation to JavaScript arrays, what is a scope? <em>Remember, time is running out</em>.</h2>
                     </div>
                     <div class="col-md-7 bg-light">
                         <ol class="card-body bg-light list-group list-group-flush">
-                            <li class="list-group-item answers"id="7aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="7a"> </li>
-                            <li class="list-group-item answers" id="7bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="7b"> </li>
-                            <li class="list-group-item answers" id="7cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="7c"> </li>
+                            <li class="list-group-item answers"id="7aa"> <input type="button" value="A zero-indexed lists of value which is a handy way to store a set of items. " class="list-group-item answers" id="7a"> </li>
+                            <li class="list-group-item answers" id="7bb"> <input type="button" value="“Scope” refers to the variables that are available to a piece of code at a given time." class="list-group-item answers" id="7b"> </li>
+                            <li class="list-group-item answers" id="7cc"> <input type="button" value="The area reachable by a variable in the JavaScript function." class="list-group-item answers" id="7c"> </li>
                         </ol>
                     </div>
                 </div>
@@ -267,13 +267,13 @@
             <div class="card-body question-body">
                 <div class="row question-body">
                     <div class="col-md-5 bg-info jumbotron">
-                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                        <h2 class="text-light">The extension of a system file is .sys. What is the extension of a jQuery file.</h2>
                     </div>
                     <div class="col-md-7 bg-light">
                         <ol class="card-body bg-light list-group list-group-flush">
-                            <li class="list-group-item answers"id="8aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="8a"> </li>
-                            <li class="list-group-item answers" id="8bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="8b"> </li>
-                            <li class="list-group-item answers" id="8cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="8c"> </li>
+                            <li class="list-group-item answers"id="8aa"> <input type="button" value=".jq" class="list-group-item answers" id="8a"> </li>
+                            <li class="list-group-item answers" id="8bb"> <input type="button" value=".js" class="list-group-item answers" id="8b"> </li>
+                            <li class="list-group-item answers" id="8cc"> <input type="button" value=".css" class="list-group-item answers" id="8c"> </li>
                         </ol>
                     </div>
                 </div>
@@ -295,13 +295,13 @@
             <div class="card-body question-body">
                 <div class="row question-body">
                     <div class="col-md-5 bg-info jumbotron">
-                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                        <h2 class="text-light">In order to code with much ease on could opt for a library. Which of the following is the most common JavaScript library</h2>
                     </div>
                     <div class="col-md-7 bg-light">
                         <ol class="card-body bg-light list-group list-group-flush">
-                            <li class="list-group-item answers"id="9aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="9a"> </li>
-                            <li class="list-group-item answers" id="9bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="9b"> </li>
-                            <li class="list-group-item answers" id="9cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="9c"> </li>
+                            <li class="list-group-item answers"id="9aa"> <input type="button" value="Angular" class="list-group-item answers" id="9a"> </li>
+                            <li class="list-group-item answers" id="9bb"> <input type="button" value="jQuery" class="list-group-item answers" id="9b"> </li>
+                            <li class="list-group-item answers" id="9cc"> <input type="button" value=Type-Script class="list-group-item answers" id="9c"> </li>
                         </ol>
                     </div>
                 </div>
@@ -323,13 +323,13 @@
             <div class="card-body question-body">
                 <div class="row question-body">
                     <div class="col-md-5 bg-info jumbotron">
-                        <h2 class="text-light">Which of the following statements is not correct according to JavaScript? Remember, you already know it.</h2>
+                        <h2 class="text-light">What is the keyboard shortcut combination of opening the js console on the browser.</h2>
                     </div>
                     <div class="col-md-7 bg-light">
                         <ol class="card-body bg-light list-group list-group-flush">
-                            <li class="list-group-item answers"id="10aa"> <input type="button" value="The var declares a variable in the local scope. It can be used repeatedly in the local scope." class="list-group-item answers" id="10a"> </li>
-                            <li class="list-group-item answers" id="10bb"> <input type="button" value="Let declares a local variable in a block scope and is limited to that local scope." class="list-group-item answers" id="10b"> </li>
-                            <li class="list-group-item answers" id="10cc"> <input type="button" value="Const statement works similar to the let but can only be declared once. Pi should be declared using const" class="list-group-item answers" id="10c"> </li>
+                            <li class="list-group-item answers"id="10aa"> <input type="button" value="Right clicking and choosing the developer option. " class="list-group-item answers" id="10a"> </li>
+                            <li class="list-group-item answers" id="10bb"> <input type="button" value="Ctrl + Shift + J" class="list-group-item answers" id="10b"> </li>
+                            <li class="list-group-item answers" id="10cc"> <input type="button" value="Ctrl + Shift + I" class="list-group-item answers" id="10c"> </li>
                         </ol>
                     </div>
                 </div>
@@ -342,8 +342,18 @@
             </div>
         </div><br><hr>
     </div>
-    <div id="time" class="container jumbotron text-dark">
-        <h1>Time is up!! Sorry but you haven't completed the questions in 10 minutes.</h1>
+    <div id="timp" class="container jumbotron text-dark mrt">
+        <div class="card bg-secondary">
+            <div class="card-header bg-secondary text-danger">
+                <h1>Sorry</h1>
+            </div>
+            <div class="card-body bg-light text-dark">
+                <h2>Time is up!! Sorry but you haven't completed the questions in 10 minutes.</h2>
+            </div>
+            <div class="card-footer bg-secondary text-primary">
+                <input type="button" value="View Results" class="start questions" id="time-results">
+            </div>
+        </div>
     </div>
 </body>
 <footer>

@@ -15,7 +15,7 @@ $(document).ready(function(){
         var wakati = confirm('Time is up, cancel to continue. Ok will give you the results \n If you continue be deducted 5 marks');
         if (wakati == true ){
           //penalty for the question
-          $('#time').fadeIn(1000);
+          $('.mrt').fadeIn(1000);
           $('#question-1, #question-2, #question-3, #question-4, #question-5, #question-6, #question-7, #question-8, question-9, question-10 ').fadeOut(100);
         }else {
           totalMarks -=5;
@@ -96,19 +96,34 @@ $(document).ready(function(){
     totalMarks += questionTen;
     console.log('Total marks are ; '+totalMarks)
     safe ++
-    
+    //Grading system
+    switch(true){
+      case (totalMarks<=50):
+        $('#perform').text('not good at all. You need to retake the test');
+        $('#grade').text('a C.').addClass('text-danger');
+        $('#marks').text(totalMarks).addClass('text-danger');
+        $('#retake, #marking').show(500);
+        break
+      case (totalMarks<=80):
+        $('#perform').text('fair. Consider putting in more time');
+        $('#grade').text('a B.');
+        $('#marks').text(totalMarks);
+        break
+      case (totalMarks<=100):
+        $('#perform').text('excellent. Keep up the momentum. You are going places')
+        $('#grade').text('an A.').addClass('text-success');
+        $('#marks').text(totalMarks).addClass('text-success');
+        break
+    }
+    if (safe===10){
+      $('#time-f').text('BTW that was amaizing time keeping! Keep up.');
+    }else{
+      $('#time-f').text('Work on your time management.');
+    }
+  });
+  $('#marking').click(function(){
+    location.reload();
   })
-    // adding the marking creteria of highlighting the correct answer
-    /*$('#marking').click(function(){
-      $('#check').fadeOut(100);
-      if(questionOne == 0){
-        $('question-1').addClass('wrong');
-        $('question-1').fadeIn(1000);
-      }else {
-        $('question-1').addClass('correct');
-        $('question-1').fadeOut(1000);
-      }
-    })*/
   /*__________________________________
     Question One
     __________________________________
@@ -641,5 +656,37 @@ $(document).ready(function(){
     $('#10c').removeClass('clicked')
     questionTen = 0;
   });
+  $('#time-results').click(function(){
+    $('#timp').hide(215);
+    $('#check').fadeIn(1000);
+    switch(true){
+      case (totalMarks<=50):
+        $('#perform').text('not good at all. You need to retake the test');
+        $('#grade').text('a C.').addClass('text-danger');
+        $('#marks').text(totalMarks).addClass('text-danger');
+        $('#retake, #marking').show(500);
+        break
+      case (totalMarks<=80):
+        $('#perform').text('fair. Consider putting in more time');
+        $('#grade').text('a B.');
+        $('#marks').text(totalMarks);
+        $('#retake, #marking').show(500);
+        break
+      case (totalMarks<=100):
+        $('#perform').text('excellent. Keep up the momentum. You are going places')
+        $('#grade').text('an A.').addClass('text-success');;
+        $('#marks').text(totalMarks).addClass('text-success');
+        $('#retake, #marking').show(500);
+        break
+    }
+    if (safe===10){
+      $('#time-f').text('BTW that was amaizing time keeping! Keep up.');
+    }else{
+      $('#time-f').text('Work on your time management.');
+    }
+  });
+  $('#marking').click(function(){
+    location.reload();
+  })
 });
 //The end of the code
