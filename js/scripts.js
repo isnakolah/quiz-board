@@ -284,7 +284,7 @@ $(document).ready(function(){
     $('#4b').removeClass('clicked')
     $('#4cc').removeClass('clicked')
     $('#4c').removeClass('clicked')
-    questionFour = 10;
+    questionFour = 0;
   });
   $('#4a').dblclick(function(){
     $('#question-five').hide(215);
@@ -318,7 +318,7 @@ $(document).ready(function(){
     $('#4a').removeClass('clicked')
     $('#4bb').removeClass('clicked')
     $('#4b').removeClass('clicked')
-    questionFour = 0;
+    questionFour = 10;
   });
   $('#4c').dblclick(function(){
     $('#question-five').hide(215);
